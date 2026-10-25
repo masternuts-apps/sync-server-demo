@@ -1,0 +1,24 @@
+{
+  "name": "syncserver",
+  "version": "1.0.0",
+  "description": "Local durable REST sync server for QSuite",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsx --test test/*.test.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["sync", "express"],
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
